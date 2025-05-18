@@ -98,7 +98,7 @@
         lg:top-[140px]{{ else }}lg:top-10{{ end }}">
 
         {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-        .TableOfContents "<h4> On this page</h4><ul") }} {{ partial "toc.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
+        .TableOfContents "<ul") }} {{ partial "toc.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
           default false }} sd {{ end }} </div>
       </div>
       {{ end }}
@@ -147,13 +147,13 @@
 
         <!-- {{ end }} -->
 
-        {{ partial "about-author.html" . }}
+        {{ partial "about-author.html" .Site.Params.author }}
 
-        {{ partial "giscus-comments.html" . }}
+        {{ partial "giscus-comments.html" .Site.Params.giscus  }}
 
         {{ partial "series/series-closed.html" . }}
         {{ partial "sharing-links.html" . }}
-        {{ partial "related.html" . }}  
+        
       </div>
      
       {{ $translations := .AllTranslations }}
@@ -176,20 +176,22 @@
       
     </section>
   <footer class="pt-8 max-w-prose print:hidden">
-
     {{ partial "article-pagination.html" . }}
     {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
-    {{ if templates.Exists "partials/comments.html" }}
-    <div class="pt-3">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      {{ if templates.Exists "partials/comments.html" }}
       <div class="pt-3">
-        {{ partial "comments.html" . }}
+        <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+        <div class="pt-3">
+          {{ partial "comments.html" . }}
+        </div>
       </div>
-    </div>
-    {{ else }}
-    {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
-    {{ end }}
+      {{ else }}
+        {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
+      {{ end }}
     {{ end }}
   </footer>
+  <div>
+    {{ partial "related.html" . }}  
+  </div>
 </article>
 {{ end }}

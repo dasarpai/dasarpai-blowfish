@@ -55,7 +55,7 @@ smartTOCHideUnfocusedChildren = false
   showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = false
-  showAuthor = true
+  showAuthor = false
   # showAuthorBottom = false
   showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
@@ -74,7 +74,7 @@ smartTOCHideUnfocusedChildren = false
   showRelatedContent = true
   relatedContentLimit = 6
   showTaxonomies = true 
-  showAuthorsBadges = true 
+  showAuthorsBadges = false 
   showWordCount = true
   sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
   showZenMode = true
@@ -190,40 +190,40 @@ smartTOCHideUnfocusedChildren = false
     site = "dasarpai"
     username = "dasarpai"  # This fixes your current error
 
-[params.links]
+[links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
+[[links.user]]
 	name = "Slack"
 	url = "https://join.slack.com/t/dasarpai/shared_invite/zt-2mg1j7ddw-0QYA9IAvFFRKw51ZBK6mkQ"
 	icon = "fab fa-slack"
-desc = "Chat with other project users in #users"
-[[params.links.user]]
+  desc = "Chat with other project users in #users"
+[[links.user]]
 	name = "User mailing list"
 	url = "https://groups.google.com/forum/#!forum/agones-discuss"
 	icon = "fa fa-envelope"
 	desc = "Discussion and help from your fellow users"
-[[params.links.user]]
+[[links.user]]
 	name ="Twitter"
 	url = "https://twitter.com/dasarpai"
 	icon = "fab fa-twitter"
 	desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
+[[links.user]]
 	name ="Community Meetings"
 	url = "https://www.youtube.com/playlist?list=PLhkWKwFGACw2dFpdmwxOyUCzlGP2-n7uF"
 	icon = "fab fa-youtube"
 	desc = "Live discussion of new features and issues, see the <a href=\"https://github.com/googleforgames/agones/blob/main/CONTRIBUTING.md#community-meetings\">calendar</a> or <a href=\"https://groups.google.com/forum/#!forum/agones-discuss\">mailing list</a> for details"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
+[[links.developer]]
 	name = "GitHub"
 	url = "https://github.com/dasarpai/dasarpai-agones"
 	icon = "fab fa-github"
 	desc = "Development takes place here!"
-[[params.links.developer]]
+[[links.developer]]
 	name = "Slack"
 	url = "https://join.slack.com/t/dasarpai/shared_invite/zt-2mg1j7ddw-0QYA9IAvFFRKw51ZBK6mkQ"
 	icon = "fab fa-slack"
 	desc = "Chat with other project developers in #development"
-[[params.links.developer]]
+[[links.developer]]
 	name ="Community Meetings"
 	url = "https://www.youtube.com/playlist?list=PLhkWKwFGACw2dFpdmwxOyUCzlGP2-n7uF"
 	icon = "fab fa-youtube"
@@ -236,7 +236,7 @@ desc = "Chat with other project users in #users"
 
 
 #### About Author ###
-[params.author]
+[author]
   name             = "Hari Thapliyaal"
   avatar           = "/assets/images/myphotos/Profilephoto1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              = "Dr. Hari Thapliyal is a seasoned professional and prolific blogger with a multifaceted background that spans the realms of Data Science, Project Management, and Advait-Vedanta Philosophy. Holding a Doctorate in AI/NLP from SSBM (Geneva, Switzerland), Hari has earned Master's degrees in Computers, Business Management, Data Science, and Economics, reflecting his dedication to continuous learning and a diverse skill set.\n\nWith over three decades of experience in management and leadership, Hari has proven expertise in training, consulting, and coaching within the technology sector. His extensive 16+ years in all phases of software product development are complemented by a decade-long focus on course design, training, coaching, and consulting in Project Management.\n\n In the dynamic field of Data Science, Hari stands out with more than three years of hands-on experience in software development, training course development, training, and mentoring professionals. His areas of specialization include Data Science, AI, Computer Vision, NLP, complex machine learning algorithms, statistical modeling, pattern identification, and extraction of valuable insights.\n\nHari's professional journey showcases his diverse experience in planning and executing multiple types of projects. He excels in driving stakeholders to identify and resolve business problems, consistently delivering excellent results. Beyond the professional sphere, Hari finds solace in long meditation, often seeking secluded places or immersing himself in the embrace of nature."
@@ -245,20 +245,19 @@ desc = "Chat with other project users in #users"
   email            = "hari@dasarpai.com"
 
 #### Commenting ####
-[params.giscus]
-    repo                 = "dasarpai/dasarpai-comments"
-    repo_id              = "R_kgDOOGVFpA"  # Shown during giscus setup at https://giscus.app
-    category_name        = "General" # Full text name of the category
-    category_id          = "DIC_kwDOOGVFpM4CnzHR" # Shown during giscus setup at https://giscus.app
-    discussion_term      = "url" # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    = 1 # '1' for enabled (default), '0' for disabled
-    theme                = "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               = 1 # 1 for enabled, 0 for disabled (default)
-    input_position       = "top" # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        = 1 # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 = "en" # "en" (default)
-    lazy                 = true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+[giscus]
+  repo                 = "dasarpai/dasarpai-comments"
+  repo_id              = "R_kgDOOGVFpA"  # Shown during giscus setup at https://giscus.app
+  category_name        = "General" # Full text name of the category
+  category_id          = "DIC_kwDOOGVFpM4CnzHR" # Shown during giscus setup at https://giscus.app
+  discussion_term      = "url" # "pathname" (default), "url", "title", "og:title"
+  reactions_enabled    = 1 # '1' for enabled (default), '0' for disabled
+  theme                = "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  strict               = 1 # 1 for enabled, 0 for disabled (default)
+  input_position       = "top" # "top", "bottom" # The comment input box will be placed above or below the comments
+  emit_metadata        = 1 # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+  lang                 = "en" # "en" (default)
+  lazy                 = true # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
 
 
-[params]
-  customCSS = ["css/custom.css"]
+customCSS = ["css/custom.css"]

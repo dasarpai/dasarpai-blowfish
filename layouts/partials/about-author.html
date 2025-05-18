@@ -1,28 +1,58 @@
-{{- with .Site.Params.author -}}
+<style>
+  .td-author-box__links {
+  display: flex;
+  gap: 10px;
+  /* margin-top: 10px; */
+  /* padding: 5px; */
+  /*background: #f0f0f0;  just for debugging */
+  /* border: 1px dashed #ccc; */
+}
+
+.td-author-box__links a {
+  /*color: #000;  Ensure link is visible */
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.td-author-box__links i {
+  /* margin-right: 5px; */
+  font-size: 1.2em;
+}
+
+</style>
+{{- with . -}}
   <div class="td-author-box">
     {{- with .avatar -}}
       <div class="td-author-box__avatar">
-        <img src="{{ . | relURL }}" alt="{{ $.Site.Params.author.name }}'s avatar" class="author-image" >
+        <img src="{{ . | relURL }}" alt="{{ $.name }}'s avatar" class="author-image" width="25%" >
       </div>
     {{- end -}}
+
+    {{- with site.Params.links.user }}
+    <div class="td-author-box__links"><b>Follow Me</b>
+      {{- range . }}
+        <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}" title="{{ .desc }}">
+          {{- if .icon }}
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+          {{- else }}
+            {{ .name }}
+          {{- end }}
+        </a>
+      {{- end }}
+    </div>
+    {{- end }}
+  
+
     <div class="td-author-box__info">
-      <h4 class="td-author-box__name">{{ .name }}</h4>
-      {{- with .bio -}}
-        <p class="td-author-box__bio">{{ . }}</p>
-      {{- end -}}
-      {{- with .links -}}
-        <div class="td-author-box__links">
-          {{- range . -}}
-            <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .label }}">
-              {{- if .icon -}}
-                <i class="{{ .icon }}" aria-hidden="true"></i>
-              {{- else -}}
-                {{ .label }}
-              {{- end -}}
-            </a>
-          {{- end -}}
-        </div>
-      {{- end -}}
+    <h4 class="td-author-box__name">{{ .name }}</h4>
+    {{- with .bio -}}
+      <p class="td-author-box__bio">{{ . }}</p>
+    {{- end -}}
+
+      
+
     </div>
   </div>
 {{- end -}}

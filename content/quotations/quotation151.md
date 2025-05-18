@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9151
+title: "Glory of Sanskrit - Quotation 151"
+date: 2022-05-30
+url: '/quotations/glory-of-sanskrit'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation151.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Glory of Sanskrit
+
+![Glory of Sanskrit](/assets/images/quotations/quotation151.jpg)

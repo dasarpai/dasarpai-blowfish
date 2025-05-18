@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9194
+title: "Death, Love and Meditation - Quotation 194"
+date: 2022-08-24
+url: '/quotations/death-love-and-meditation'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation194.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Death, Love and Meditation
+
+![Death, Love and Meditation](/assets/images/quotations/quotation194.jpg)

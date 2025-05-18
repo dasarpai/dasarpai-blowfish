@@ -1,0 +1,690 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+#####################################
+# Top Header navigation
+#####################################
+# Home Menu
+[[main]]
+name = "Home"
+identifier = "home"
+weight = 10
+hasChildren = true
+
+  [[main]]
+  name = "About Me"
+  identifier = "aboutme"
+  parent = "home"
+  url = "/aboutme"
+
+  [[main]]
+  name = "DS/AI Courses/Services"
+  identifier = "dsai-courses"
+  parent = "home"
+  url = "/dscourses"
+
+  [[main]]
+  name = "Project/Work Catalog"
+  identifier = "work-catalog"
+  parent = "home"
+  url = "/project-index-page"
+  hasChildren = true
+
+    [[main]]
+    name = "Business Domain"
+    identifier = "business-domain"
+    parent = "work-catalog"
+    url = "/summary-of-al-ml-projects"
+
+    [[main]]
+    name = "Technology Stack"
+    identifier = "tech-stack"
+    parent = "work-catalog"
+    url = "/summary-of-my-technology-stacks"
+
+    [[main]]
+    name = "Project Management"
+    identifier = "project-mgmt"
+    parent = "work-catalog"
+    url = "/summary-of-management-projects"
+
+  [[main]]
+  name = "PM Courses/Services"
+  identifier = "pm-courses"
+  parent = "home"
+  url = "/management"
+
+  [[main]]
+  name = "Clients"
+  identifier = "clients"
+  parent = "home"
+  url = "/clients"
+
+  [[main]]
+  name = "Testimonial"
+  identifier = "testimonial"
+  parent = "home"
+  url = "/testimonials"
+
+  [[main]]
+  name = "Publications"
+  identifier = "publications"
+  parent = "home"
+  url = "/publications-home"
+
+  [[main]]
+  name = "History Corpus"
+  identifier = "history-corpus"
+  parent = "home"
+  url = "/corpus-home"
+
+# Data Science Menu
+[[main]]
+name = "Data Science"
+identifier = "datascience"
+weight = 20
+hasChildren = true
+
+  [[main]]
+  name = "Data Science Blog"
+  identifier = "dsblog"
+  parent = "datascience"
+  url = "/dsblog"
+
+  [[main]]
+  name = "DS Resources"
+  identifier = "ds-resources"
+  parent = "datascience"
+  url = "/datascience-resources"
+
+  [[main]]
+  name = "AI and Business News"
+  identifier = "ai-news"
+  parent = "datascience"
+  url = "/news"
+
+  [[main]]
+  name = "Data Science-Books"
+  identifier = "ds-books"
+  parent = "datascience"
+  url = "/dsblog/ds-ai-ml-books"
+
+  [[main]]
+  name = "Data Science Cheatsheets"
+  identifier = "ds-cheatsheets"
+  parent = "datascience"
+  url = "/dsblog/data-science-cheatsheets"
+
+  [[main]]
+  name = "Video Channels to Learn DS"
+  identifier = "ds-videos"
+  parent = "datascience"
+  url = "/dsblog/best-youtube-channels-for-ds"
+
+  [[main]]
+  name = "DS Interview Questions"
+  identifier = "ds-interview"
+  parent = "datascience"
+  url = "/dsblog/ds-ai-ml-interview-resources"
+
+  [[main]]
+  name = "Data Science Topics"
+  identifier = "ds-topics"
+  parent = "datascience"
+  url = "/datascience-tags"
+
+# Project Management Menu
+[[main]]
+name = "Project Management"
+identifier = "pm"
+weight = 30
+hasChildren = true
+
+  [[main]]
+  name = "PMLOGY Home"
+  identifier = "pmlogy-home"
+  parent = "pm"
+  url = "/pmlogy-home"
+
+  [[main]]
+  name = "PMLOGY Blog"
+  identifier = "pmblog"
+  parent = "pm"
+  url = "/pmblog"
+
+  [[main]]
+  name = "PM Glossary"
+  identifier = "pm-glossary"
+  parent = "pm"
+  url = "/pmglossary"
+
+  [[main]]
+  name = "PM Topics"
+  identifier = "pm-topics"
+  parent = "pm"
+  url = "/pmlogy-tags"
+
+  [[main]]
+  name = "PMBOK6 Topics"
+  identifier = "pmbok6-tags"
+  parent = "pm"
+  url = "/pmbok6-tags"
+
+  [[main]]
+  name = "PMBOK6"
+  identifier = "pmbok6"
+  parent = "pm"
+  url = "/pmbok6-summary"
+
+  [[main]]
+  name = "PMBOK6 Explorer"
+  identifier = "pmbok6-explorer"
+  parent = "pm"
+  url = "/pmbok6"
+
+  [[main]]
+  name = "PM Resources"
+  identifier = "pm-resources"
+  parent = "pm"
+  hasChildren = true
+
+    [[main]]
+    name = "PMBOK6 Templates"
+    identifier = "pmbok6-templates"
+    parent = "pm-resources"
+    url = "/pmi-templates"
+
+    [[main]]
+    name = "PRINCE2 Templates"
+    identifier = "prince2-templates"
+    parent = "pm-resources"
+    url = "/prince2-templates"
+
+    [[main]]
+    name = "Microsoft PM Templates"
+    identifier = "ms-pm-templates"
+    parent = "pm-resources"
+    url = "/microsoft-pm-templates"
+
+  [[main]]
+  name = "Project Management Hindi"
+  identifier = "pm-hindi"
+  parent = "pm"
+  hasChildren = true
+
+    [[main]]
+    name = "PMBOK6 Hindi Topics"
+    identifier = "pmbok6hi-tags"
+    parent = "pm-hindi"
+    url = "/pmbok6hi-tags"
+
+    [[main]]
+    name = "PMBoK6 Hindi"
+    identifier = "pmbok6hi-summary"
+    parent = "pm-hindi"
+    url = "/pmbok6hi-summary"
+
+    [[main]]
+    name = "PMBOK6 Hindi Explorer"
+    identifier = "pmbok6hi"
+    parent = "pm-hindi"
+    url = "/pmbok6hi"
+
+# SpiritualDrops Menu
+[[main]]
+name = "SpiritualDrops"
+identifier = "spiritual"
+weight = 40
+hasChildren = true
+
+  [[main]]
+  name = "WIA Home"
+  identifier = "wia-home"
+  parent = "spiritual"
+  url = "/wia-home"
+
+  [[main]]
+  name = "WIA Blog"
+  identifier = "wia-blog"
+  parent = "spiritual"
+  url = "/wiaposts"
+
+  [[main]]
+  name = "WIA Topics"
+  identifier = "wia-tags"
+  parent = "spiritual"
+  url = "/wia-tags"
+
+  [[main]]
+  name = "WIA Quotes"
+  identifier = "wia-quotes"
+  parent = "spiritual"
+  url = "/quotations-blog"
+
+  [[main]]
+  name = "GK Blog"
+  identifier = "gk"
+  parent = "spiritual"
+  url = "/gk"
+
+  [[main]]
+  name = "GK Topic"
+  identifier = "gk-tags"
+  parent = "spiritual"
+  url = "/gk-tags"
+
+  [[main]]
+  name = "Book Summary"
+  identifier = "book-summary"
+  parent = "spiritual"
+  url = "/booksummary"
+
+# Gallery Menu
+[[main]]
+name = "Gallery"
+identifier = "gallery"
+weight = 50
+url = "/gallary"
+hasChildren = true
+
+  [[main]]
+  name = "Online AI Classes 1"
+  identifier = "ai-classes-1"
+  parent = "gallery"
+  url = "/gallary/slider-online-sessions1"
+
+  [[main]]
+  name = "Online AI Classes 2"
+  identifier = "ai-classes-2"
+  parent = "gallery"
+  url = "/gallary/slider-online-sessions2"
+
+  [[main]]
+  name = "Online AI Classes 3"
+  identifier = "ai-classes-3"
+  parent = "gallery"
+  url = "/gallary/slider-online-sessions3"
+
+  [[main]]
+  name = "Online AI Classes 4"
+  identifier = "ai-classes-4"
+  parent = "gallery"
+  url = "/gallary/slider-online-sessions4"
+
+  [[main]]
+  name = "Management Classes"
+  identifier = "mgmt-classes"
+  parent = "gallery"
+  url = "/gallary/slider-pm-selected-photos"
+
+  [[main]]
+  name = "PM & DS Workshop Photos"
+  identifier = "pm-ds-workshops"
+  parent = "gallery"
+  url = "/gallary/slider-pm-workshops"
+
+# Samskrut Menu
+[[main]]
+name = "Samskrut"
+identifier = "samskrut"
+weight = 60
+hasChildren = true
+
+  [[main]]
+  name = "SamskrutYatra Home"
+  identifier = "samskrut-home"
+  parent = "samskrut"
+  url = "/samskrutyatra-home"
+
+  [[main]]
+  name = "Samskrut Blog"
+  identifier = "samskrut-blog"
+  parent = "samskrut"
+  url = "/samskrutyatra"
+
+  [[main]]
+  name = "Samskrut Topics"
+  identifier = "samskrut-tags"
+  parent = "samskrut"
+  url = "/samskrutyatra-tags"
+
+  [[main]]
+  name = "My Vedic Chantings"
+  identifier = "vedic-chantings"
+  parent = "samskrut"
+  url = "/mychanting"
+
+
+
+
+
+
+#####################################
+# Website footer navigation
+#####################################
+
+###### footer navigation ########
+# -----------------------
+# importantlinks
+# -----------------------
+[[importantlinks]]
+name = "About Me"
+url = "/aboutme"
+weight = 1
+
+[[importantlinks]]
+name = "My Data Science Courses/Services"
+url = "/dscourses"
+weight = 2
+
+[[importantlinks]]
+name = "MyWork by Business Domain"
+url = "/summary-of-al-ml-projects"
+weight = 3
+
+[[importantlinks]]
+name = "MyWork by Tech Stack"
+url = "/summary-of-my-technology-stacks"
+weight = 4
+
+[[importantlinks]]
+name = "MyWork in Project Management"
+url = "/summary-of-management-projects"
+weight = 5
+
+[[importantlinks]]
+name = "Clients"
+url = "/clients"
+weight = 6
+
+[[importantlinks]]
+name = "Testimonial"
+url = "/testimonials"
+weight = 7
+
+[[importantlinks]]
+name = "Terms & Condition"
+url = "/terms-of-service"
+weight = 8
+
+[[importantlinks]]
+name = "Privacy Policy"
+url = "/privacy"
+weight = 9
+
+[[importantlinks]]
+name = "Comment Policy"
+url = "/comment-policy"
+weight = 10
+
+# -----------------------
+# myblogs
+# -----------------------
+[[myblogs]]
+name = "Data Science Blog"
+url = "/dsblog"
+weight = 1
+
+[[myblogs]]
+name = "Books/Interviews Blog"
+url = "/booksumary"
+weight = 2
+
+[[myblogs]]
+name = "AI and Business News"
+url = "/news"
+weight = 3
+
+[[myblogs]]
+name = "PMLOGY Blog"
+url = "/pmblog"
+weight = 4
+
+[[myblogs]]
+name = "PMBOK6 Hindi Explorer"
+url = "/pmbok6hi"
+weight = 5
+
+[[myblogs]]
+name = "Wisdom in Awareness Blog"
+url = "/wiaposts"
+weight = 6
+
+[[myblogs]]
+name = "Samskrut Blog"
+url = "/samskrutyatra"
+weight = 7
+
+[[myblogs]]
+name = "My Chantings"
+url = "/mychanting"
+weight = 8
+
+[[myblogs]]
+name = "WIA Quotes"
+url = "/quotations-blog"
+weight = 9
+
+[[myblogs]]
+name = "GK Blog"
+url = "/gk"
+weight = 10
+
+# -----------------------
+# allresources
+# -----------------------
+[[allresources]]
+name = "DS Resources"
+url = "/datascience-tags#ds-resources"
+weight = 1
+
+[[allresources]]
+name = "AI Benchmark Explorer"
+url = "https://aibenchmark-explorer.dasarpai.com"
+weight = 2
+
+[[allresources]]
+name = "Data Science-Books"
+url = "/dsblog/ds-ai-ml-books"
+weight = 3
+
+[[allresources]]
+name = "Data Science/AI Cheatsheets"
+url = "/dsblog/data-science-cheatsheets"
+weight = 4
+
+[[allresources]]
+name = "Video Channels to Learn DS/AI"
+url = "/dsblog/best-youtube-channels-for-ds"
+weight = 5
+
+[[allresources]]
+name = "DS/AI Interview Questions"
+url = "/dsblog/ds-ai-ml-interview-resources"
+weight = 6
+
+[[allresources]]
+name = "GitHub DAI-Datasets"
+url = "https://github.com/dasarpai/DAI-Datasets"
+weight = 7
+
+[[allresources]]
+name = "PMBOK6 Templates"
+url = "/pmi-templates"
+weight = 8
+
+[[allresources]]
+name = "PRINCE2 Templates"
+url = "/prince2-templates"
+weight = 9
+
+[[allresources]]
+name = "Microsoft PM Templates"
+url = "/microsoft-pm-templates"
+weight = 10
+
+# -----------------------
+# projectmanagement
+# -----------------------
+[[projectmanagement]]
+name = "PMLOGY Home"
+url = "/pmlogy-home"
+weight = 1
+
+[[projectmanagement]]
+name = "PMLOGY Blog"
+url = "/pmblog"
+weight = 2
+
+[[projectmanagement]]
+name = "PM Glossary"
+url = "/pmglossary"
+weight = 3
+
+[[projectmanagement]]
+name = "PM Topics"
+url = "/pmlogy-tags"
+weight = 4
+
+[[projectmanagement]]
+name = "PMBOK6 Topics"
+url = "/pmbok6-tags"
+weight = 5
+
+[[projectmanagement]]
+name = "PMBOK6"
+url = "/pmbok6-summary"
+weight = 6
+
+[[projectmanagement]]
+name = "PMBOK6 Explorer"
+url = "/pmbok6"
+weight = 7
+
+[[projectmanagement]]
+name = "PMBOK6 Hindi Topics"
+url = "/pmbok6hi-tags"
+weight = 8
+
+[[projectmanagement]]
+name = "PMBoK6 Hindi"
+url = "/pmbok6hi-summary"
+weight = 9
+
+[[projectmanagement]]
+name = "PMBOK6 Hindi Explorer"
+url = "/pmbok6hi"
+weight = 10
+
+# -----------------------
+# wia
+# -----------------------
+[[wia]]
+name = "WIA Home"
+url = "/wia-home"
+weight = 1
+
+[[wia]]
+name = "WIA Blog"
+url = "/wiaposts"
+weight = 2
+
+[[wia]]
+name = "WIA Topics"
+url = "/wia-tags"
+weight = 3
+
+[[wia]]
+name = "WIA Quotes"
+url = "/quotations-blog"
+weight = 4
+
+[[wia]]
+name = "GK Blog"
+url = "/gk"
+weight = 5
+
+[[wia]]
+name = "GK Topic"
+url = "/gk-tags"
+weight = 6
+
+# -----------------------
+# samskrutyatra
+# -----------------------
+[[samskrutyatra]]
+name = "SamskrutYatra Home"
+url = "/samskrutyatra-home"
+weight = 1
+
+[[samskrutyatra]]
+name = "Samskrut Blog"
+url = "/samskrutyatra"
+weight = 2
+
+[[samskrutyatra]]
+name = "Samskrut Topics"
+url = "/samskrutyatra-tags"
+weight = 3
+
+[[samskrutyatra]]
+name = "My Vedic Chantings"
+url = "/mychanting"
+weight = 4
+
+# -----------------------
+# mygallary
+# -----------------------
+[[mygallary]]
+name = "Online AI Classes 1"
+url = "/gallary/slider-online-sessions1"
+weight = 1
+
+[[mygallary]]
+name = "Online AI Classes 2"
+url = "/gallary/slider-online-sessions2"
+weight = 2
+
+[[mygallary]]
+name = "Online AI Classes 3"
+url = "/gallary/slider-online-sessions3"
+weight = 3
+
+[[mygallary]]
+name = "Online AI Classes 4"
+url = "/gallary/slider-online-sessions4"
+weight = 4
+
+[[mygallary]]
+name = "Management Classes"
+url = "/gallary/slider-pm-selected-photos"
+weight = 5
+
+[[mygallary]]
+name = "PM & DS Workshop"
+url = "/gallary/slider-pm-workshops"
+weight = 6
+
+
+# -- Page Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
+
+[[footer]]
+  name = "Authors"
+  pageRef = "authors"
+  weight = 20

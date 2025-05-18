@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9055
+title: "Real Face - Quotation 055"
+date: 2021-11-19
+url: '/quotations/real-face'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation055.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Real Face
+
+![Real Face](/assets/images/quotations/quotation055.jpg)

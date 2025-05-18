@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9036
+title: "Krishna and Cows - Quotation 036"
+date: 2021-10-12
+url: '/quotations/krishna-and-cows'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation036.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Krishna and Cows
+
+![Krishna and Cows](/assets/images/quotations/quotation036.jpg)

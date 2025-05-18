@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9091
+title: "Reflective Mind - Quotation 091"
+date: 2022-01-30
+url: '/quotations/reflective-mind'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation091.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Reflective Mind
+
+![Reflective Mind](/assets/images/quotations/quotation091.jpg)

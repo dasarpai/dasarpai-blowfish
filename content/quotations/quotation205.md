@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9205
+title: "Busy Even in Dream - Quotation 205"
+date: 2022-09-15
+url: '/quotations/busy-even-in-dream'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation205.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Busy Even in Dream
+
+![Busy Even in Dream](/assets/images/quotations/quotation205.jpg)

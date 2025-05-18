@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9069
+title: "Worldly Joy - Quotation 069"
+date: 2021-12-17
+url: '/quotations/worldly-joy'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation069.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Worldly Joy
+
+![Worldly Joy](/assets/images/quotations/quotation069.jpg)

@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9114
+title: "The Best is not the Best - Quotation 114"
+date: 2022-03-17
+url: '/quotations/the-best-is-not-the-best'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation114.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# The Best is not the Best
+
+![The Best is not the Best](/assets/images/quotations/quotation114.jpg)

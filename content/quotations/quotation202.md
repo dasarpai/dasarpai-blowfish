@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9202
+title: "What is Sin? - Quotation 202"
+date: 2022-09-09
+url: '/quotations/what-is-sin'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation202.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# What is Sin?
+
+![What is Sin?](/assets/images/quotations/quotation202.jpg)

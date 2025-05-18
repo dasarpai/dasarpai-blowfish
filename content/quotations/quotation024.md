@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9024
+title: "Janmashtami 2021 - Quotation 024"
+date: 2021-08-30
+url: '/quotations/janmashtami-2021'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation024.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Janmashtami 2021
+
+![Janmashtami 2021](/assets/images/quotations/quotation024.jpg)

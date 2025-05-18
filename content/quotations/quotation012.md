@@ -1,0 +1,19 @@
+---
+mathjax: true
+id: 9012
+title: "Respect vs Tolerance - Quotation 012"
+date: 2021-08-25
+url: '/quotations/respect-vs-tolerance'
+tags: [WIA Quotations] 
+categories: 
+
+header:
+    teaser: /assets/images/quotations/quotation012.jpg
+author: Hari Thapliyaal 
+excerpt:
+share: true 
+---
+
+# Respect vs Tolerance
+
+![Respect vs Tolerance](/assets/images/quotations/quotation012.jpg)

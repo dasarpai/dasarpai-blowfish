@@ -1,4 +1,5 @@
 ---
+draft: false
 id: 6001    
 title: "Dealing with Sensitive Data"
 date: '2020-03-10T15:50:00+05:30'

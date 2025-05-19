@@ -1,0 +1,5 @@
+[frontmatter]
+  [frontmatter.mathjax]
+    description = "Enable MathJax for mathematical equations"
+    type = "boolean"
+    default = false

@@ -14,7 +14,7 @@ tags:
   - AI Conversations on Vedanta
 categories:
   - dsblog
-  - dsphilosophy
+  - Philosophy
 
 header:
   teaser: /assets/images/dspost/dsp6257-quantum-physics-and-vedanta.jpg # Update teaser if needed

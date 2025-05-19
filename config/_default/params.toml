@@ -29,7 +29,7 @@ smartTOC = true
 smartTOCHideUnfocusedChildren = false
 
 [header]
-  layout = "fixed-gradient" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -45,15 +45,17 @@ smartTOCHideUnfocusedChildren = false
   showRecentItems = 6
   showMoreLink = true
   showMoreLinkDest = "docs"
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
 
+
+
 [article]
-  showDate = false
+  showDate = true
   showViews = false
   showLikes = false
-  showDateOnlyInArticle = false
+  showDateOnlyInArticle = true
   showDateUpdated = false
   showAuthor = false
   # showAuthorBottom = false
@@ -63,9 +65,9 @@ smartTOCHideUnfocusedChildren = false
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
-  editURL = "https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content"
-  editAppendPath = true
-  seriesOpened = false
+  # editURL = "https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content"
+  # editAppendPath = true
+  # seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
@@ -76,7 +78,7 @@ smartTOCHideUnfocusedChildren = false
   showTaxonomies = true 
   showAuthorsBadges = false 
   showWordCount = true
-  sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "whatsapp", "telegram", "pinterest", "facebook", "email"]
+  sharingLinks = [ "linkedin", "twitter", "whatsapp", "telegram", "pinterest", "facebook", "email", "bluesky", "reddit"]
   showZenMode = true
 
 [list]
@@ -85,14 +87,14 @@ smartTOCHideUnfocusedChildren = false
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = true
-  showCards = true
-  orderByWeight = true
-  groupByYear = false
-  cardView = true
+  showCards = false
+  orderByWeight = false
+  groupByYear = true
+  cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
 
@@ -112,13 +114,13 @@ smartTOCHideUnfocusedChildren = false
 [term]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
-  showTableOfContents = true
-  groupByYear = false
-  cardView = true
-  cardViewScreenWidth = false
+  showTableOfContents = false
+  groupByYear = true
+  cardView = false
+  cardViewScreenWidth = true
   
 [firebase]
   #apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"
@@ -162,12 +164,12 @@ smartTOCHideUnfocusedChildren = false
   # userId = ""
 
 
- [params.social]
+[social]
     # Share buttons to show
     share = ["facebook", "twitter", "linkedin", "reddit", "whatsapp", "email"]
   
   # Social media accounts - used for footer links and share buttons
-  [params.social.links]
+  [social.links]
     github = "https://github.com/dasarpai"
     twitter = "https://twitter.com/dasarpai"
     linkedin = "https://linkedin.com/in/dasarpai"
@@ -176,7 +178,7 @@ smartTOCHideUnfocusedChildren = false
     youtube = "https://youtube.com/dasarpai"
   
   # Social media usernames - used for @mentions and attributions
-  [params.social.usernames]
+  [social.usernames]
     github = "dasarpai"
     twitter = "dasarpai"
     linkedin = "harithapliyal"
@@ -185,7 +187,7 @@ smartTOCHideUnfocusedChildren = false
     youtube = "dasarpai"
   
   # Twitter specific settings (for Docsy compatibility)
-  [params.twitter]
+  [twitter]
     creator = "dasarpai"
     site = "dasarpai"
     username = "dasarpai"  # This fixes your current error

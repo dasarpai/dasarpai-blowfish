@@ -4,10 +4,12 @@
 
 theme = "blowfish"
 baseURL = "https://localhost:1313"
-defaultContentLanguage = "en"
-disableLanguages = [] #to allow translation work requiring shipping to production
+# defaultContentLanguage = "en"
+# disableLanguages = [] #to allow translation work requiring shipping to production
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+
+ignoreFiles = ["\\.it\\.md$", "\\.fr\\.md$", "\\.de\\.md$"]
 
 enableRobotsTXT = true
 summaryLength = 30
@@ -29,8 +31,10 @@ googleAnalytics = "G-PEDMYR1V0K"
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
+  # author = "authors"
   series = "series"
+
+
 
 [sitemap]
   changefreq = 'always'
@@ -39,6 +43,7 @@ googleAnalytics = "G-PEDMYR1V0K"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
 
 [related]
   threshold = 0

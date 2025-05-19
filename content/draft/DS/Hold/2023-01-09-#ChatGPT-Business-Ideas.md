@@ -1,5 +1,5 @@
 --- 
-mathjax: true
+draft: true
 id: 6116
 title: #ChatGPT Business Ideas
 date: '2023-01-06T15:50:00+05:30'   

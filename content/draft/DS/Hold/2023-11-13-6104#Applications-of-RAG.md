@@ -1,6 +1,7 @@
 ---
+draft: true
 mathjax: true
-id: 6133
+id: 
 title: 6104#Applications of RAG
 date: 2023-11-11
 url: /dsblog/6104#Applications-of-RAG

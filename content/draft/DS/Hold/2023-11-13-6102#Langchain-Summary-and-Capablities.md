@@ -1,6 +1,7 @@
 ---
+draft: true
 mathjax: true
-id: 6132
+id: 
 title: 6102#Langchain Summary and Capablities
 date: 2023-11-11
 url: /dsblog/6102#Langchain-Summary-and-Capablities

@@ -60,7 +60,7 @@ links = [
 
 The `[params.author]` configuration determines how the author information is displayed on the website. The image should be placed in the site's `assets/` folder. Links will be displayed in the order they are listed.
 
-If you need extra detail, further information about each of these configuration options, is covered in the [Configuration]({{< ref "configuration" >}}) section.
+If you need extra detail, further information about each of these configuration options, is covered in the [Configuration]() section.
 
 ## Colour schemes
 
@@ -269,4 +269,4 @@ Additionally, Blowfish also supports background hero images in articles and list
 
 ## Detailed configuration
 
-The steps above are the bare minimum configuration. If you now run `hugo server` you will be presented with a blank Blowfish website. Detailed configuration is covered in the [Configuration]({{< ref "configuration" >}}) section.
+The steps above are the bare minimum configuration. If you now run `hugo server` you will be presented with a blank Blowfish website. Detailed configuration is covered in the [Configuration]() section.

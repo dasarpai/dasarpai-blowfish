@@ -1,5 +1,5 @@
-replace nn, title, slug
----
+--- 
+draft: true
 mathjax: true
 id: 6129
 title: #DeepLearing APIs

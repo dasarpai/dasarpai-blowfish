@@ -17,10 +17,9 @@ pagination:
 
 
 description: >
-  Welcome to my datascience blog.
+  Welcome to my Data Science Blog.
 ---
 
 Welcome to my Data Science Blog!
 
-These pages show you how to get up and running as quickly as possible in Agones.
 

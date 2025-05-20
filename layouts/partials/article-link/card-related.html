@@ -25,11 +25,18 @@
     {{- with $featured -}}
     {{ if or $disableImageOptimization (strings.HasSuffix $featured ".svg")}}
       {{ with . }}
+        {{ if not $teaserimage }}
+            {{ $teaserimage = .RelPermalink }}
+        {{ end }}
       
       <div class="w-full thumbnail_card_related nozoom" style="background-image:url({{ $teaserimage }});"></div>
       {{ end }}
     {{ else }}
       {{ with .Resize "600x" }}
+      {{ if not $teaserimage }}
+          {{ $teaserimage = .RelPermalink }}
+      {{ end }}
+      
       <div class="w-full thumbnail_card_related nozoom" style="background-image:url({{ $teaserimage }});"></div>
       {{ end }}
     {{ end }}

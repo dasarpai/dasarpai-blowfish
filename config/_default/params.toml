@@ -111,7 +111,7 @@ smartTOCHideUnfocusedChildren = false
   showViews = false
   showLikes = false
   showTableOfContents = true
-  cardView = false
+  cardView = true
 
 [term]
   showHero = true
@@ -119,9 +119,9 @@ smartTOCHideUnfocusedChildren = false
   showBreadcrumbs = true
   showViews = false
   showLikes = false
-  showTableOfContents = false
+  showTableOfContents = true
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = true
   
 [firebase]

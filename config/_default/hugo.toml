@@ -45,6 +45,7 @@ googleAnalytics = "G-PEDMYR1V0K"
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
 
+
 [related]
   threshold = 0
   toLower = false

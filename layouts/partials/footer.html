@@ -1,0 +1,126 @@
+<style>
+  footer#site-footer {
+    background-color: #0e0517;
+  }
+
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  footer .row .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 15px
+  }
+</style>
+
+
+<footer id="site-footer" class="py-10 print:hidden">
+  {{/* Footer menu */}}
+  {{ if .Site.Params.footer.showMenu | default true }}
+    <div class="row">
+      
+
+      <div class="col-md-4">
+        
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_importantlinks") }}
+      </div>
+
+      <div class="col-md-4">
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_myblogs") }}
+      </div>
+
+      <div class="col-md-4">
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_allresources") }}
+      </div>
+
+    </div>
+
+    <!-- Second row -->
+
+    <div class="row">
+
+
+      <div class="col-md-4">
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_projectmanagement") }}
+      </div>
+
+      <div class="col-md-4">
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_wia") }}
+      </div>
+
+      <div class="col-md-4">   
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_mygallary") }}
+      </div>
+
+    </div>
+
+    <!-- Third row -->
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <a href="https://dasarpai.com" target="_blank" rel="noopener">
+          <img src="{{ "assets/images/site-logo.png" | absURL }}" alt="dasarpAI" width="100" style="border-radius: 12px;">
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        {{ partial "footer-menu.html" (dict "context" . "menuName" "footer_samskrutyatra") }}
+      </div>
+
+      
+
+      <div class="col-md-4">
+
+      </div>
+
+    </div>
+
+  {{ end }}
+  <div class="flex items-center justify-between p-4">
+
+    {{/* Copyright */}}
+    {{ if .Site.Params.footer.showCopyright | default true }}
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      {{- with replace .Site.Params.copyright "{ year }" now.Year  }}
+        {{ . | markdownify }}
+      {{- else }}
+        &copy;
+        {{ now.Format "2006" }}
+        {{ .Site.Params.Author.name | markdownify }}
+      {{- end }}
+    </p>
+    {{ end }}
+
+    {{/* Theme attribution */}}
+    {{ if .Site.Params.footer.showThemeAttribution | default true }}
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+      }}
+      {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>` }}
+      {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
+    </p>
+    {{ end }}
+
+  </div>
+  <script>
+    {{ if not .Site.Params.disableImageZoom | default true }}
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    {{ end }}
+  </script>
+  {{ $jsProcess := resources.Get "js/process.js" }}
+  {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint "sha512" }}
+  <script type="text/javascript" src="{{ $jsProcess.RelPermalink }}" integrity="{{ $jsProcess.Data.Integrity }}"></script>
+  {{/* Extend footer - eg. for extra scripts, etc. */}}
+  {{ if templates.Exists "partials/extend-footer.html" }}
+  {{ partialCached "extend-footer.html" . }}
+  {{ end }}
+</footer>

@@ -2,7 +2,7 @@
 draft: false
 id: 750
 title: "Summary of Management Project"
-
+layout: infopage
 toc_sticky: true
 url: /summary-of-management-projects
 date: 2024-10-03

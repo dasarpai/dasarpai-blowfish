@@ -1,7 +1,7 @@
 ---        
 id: 716    
 title: "PMI Templates"        
-
+layout: infopage
 toc: false        
 toc_sticky: true        
 url: /pmi-templates        

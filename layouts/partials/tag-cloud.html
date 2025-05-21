@@ -1,0 +1,68 @@
+<style>
+    .tag-cloud a {
+      display: inline-block;
+      margin: 0.4rem;
+      text-decoration: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tag-cloud a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      z-index: 10;
+    }
+  </style>
+  
+  {{/* 
+    Parameters:
+    - section: The section to get tags from (e.g., "dsblog")
+    - title: Optional title for the tag cloud
+  */}}
+  {{ $section := .section | default "dsblog" }}
+  {{ $title := .title | default (printf "Tags in %s" (humanize $section)) }}
+
+  xxxx {{ $section }}
+  {{ $sectionPages := site.GetPage "section" $section }}
+  {{ $allTags := slice }}
+  
+  {{ range $sectionPages.Pages }}
+    {{ with .Params.tags }}
+      {{ $allTags = $allTags | append . }}
+    {{ end }}
+  {{ end }}
+  
+  {{ $tagCounts := dict }}
+  {{ range $tag := $allTags }}
+    {{ $tag = $tag | lower }}
+    {{ $count := index $tagCounts $tag | default 0 }}
+    {{ $tagCounts = merge $tagCounts (dict $tag (add $count 1)) }}
+  {{ end }}
+
+  <div class="tag-cloud mb-12">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+      {{ $title }}
+    </h2>
+    
+    <div class="flex flex-wrap -mx-2">
+      {{ range $tag, $count := $tagCounts }}
+        <!-- {{ $tagURL := printf "/%s/tags/%s/" $section ($tag | urlize) }}
+         -->
+         {{ $tagURL := printf "tags/%s/" (urlize $tag) }}
+        <div class="px-2 py-1 transform transition-all duration-300 hover:scale-105">
+          <a href="{{ $tagURL | relURL }}" 
+             class="inline-flex items-center px-4 py-2 rounded-lg
+                    bg-white border border-gray-200 hover:border-blue-300
+                    hover:bg-blue-50 hover:shadow-lg
+                    transition-all duration-300 ease-out
+                    text-gray-700 hover:text-blue-700">
+            <span class="font-medium">{{ $tag | humanize }}</span>
+            <span class="ml-2 px-2 py-0.5 text-xs font-semibold rounded-full 
+                       bg-blue-50 text-blue-700 group-hover:bg-blue-100">
+              {{ $count }}
+            </span>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>

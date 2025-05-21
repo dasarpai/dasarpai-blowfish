@@ -1,7 +1,7 @@
 ---
 draft: false
 id: 732    
-
+layout: infopage
 url: /summary
 collection: single
 title: "Summary of My Work / Achievments"

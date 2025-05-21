@@ -2,7 +2,7 @@
 draft: false
 id: 748
 title: "Summary of AI ML Project"
-
+layout: infopage
 toc_sticky: true
 url: /summary-of-al-ml-projects
 date: 2024-10-03

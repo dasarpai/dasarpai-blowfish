@@ -3,7 +3,7 @@ draft: false
 id: 742    
 title: "Books and Publications"
 date: '2024-01-01T10:07:10+00:00'
-
+layout: infopage
 url: /publications-home
 collection: projects
 

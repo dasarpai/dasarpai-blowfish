@@ -2,7 +2,7 @@
 draft: false
 id: 701    
 title: "About Me"
-
+layout: infopage
 toc_sticky: true
 url: /aboutme
 date: 2018-01-28

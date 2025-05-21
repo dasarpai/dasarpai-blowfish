@@ -2,7 +2,7 @@
 draft: false
 id: 746    
 title: "Terms of Service"
-
+layout: infopage
 toc_sticky: true
 url: /terms-of-service
 date: 2023-12-01

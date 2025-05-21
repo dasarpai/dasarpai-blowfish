@@ -3,7 +3,7 @@ draft: false
 id: 718    
 title: PMLOGY - My Journey
 date: '2020-10-21T14:51:37+05:30'
-
+layout: infopage
 url: /pmlogy-home
 author_profile: true
 header:

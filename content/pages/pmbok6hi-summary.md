@@ -1,7 +1,7 @@
 ---
 draft: false
 id: 712    
-
+layout: infopage
 url: /pmbok6hi-summary
 title: "PMBOK 6 Processes - Hindi Edition"
 author_profile: true

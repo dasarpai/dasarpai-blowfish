@@ -1,7 +1,7 @@
 ---
 draft: false
 id: 724    
-
+layout: infopage
 url: /services
 collection: single
 title: "My Courses on Data Science, AI, ML, Deep Learning, NLP & Project Management"

@@ -1,0 +1,42 @@
+<a href="{{ .Page.RelPermalink }}" class="block h-full">
+  <div class="h-full border border-neutral-200 dark:border-neutral-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    {{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+
+    {{/* Featured Image */}}
+    {{- $images := .Page.Resources.ByType "image" -}}
+    {{- $featured := $images.GetMatch "*feature*" -}}
+    {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+
+    {{- with $featured -}}
+      {{ if $disableImageOptimization }}
+        <div class="w-full h-48 bg-cover bg-center" style="background-image:url({{ .RelPermalink }})"></div>
+      {{ else }}
+        {{ with .Fill "600x400 center" }}
+          <div class="w-full h-48 bg-cover bg-center" style="background-image:url({{ .RelPermalink }})"></div>
+        {{ end }}
+      {{ end }}
+    {{- else -}}
+      <div class="w-full h-48 bg-gray-100 flex items-center justify-center">
+        <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </div>
+    {{- end -}}
+
+    <div class="p-4">
+      <h3 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 line-clamp-2">
+        {{ .Page.Title }}
+      </h3>
+      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+        <time datetime="{{ .Page.Date.Format "2006-01-02" }}">
+          {{ .Page.Date.Format "January 2, 2006" }}
+        </time>
+        <span class="mx-2">•</span>
+        <span>{{ .Page.ReadingTime }} min read</span>
+      </div>
+      {{ with .Page.Description }}
+        <p class="mt-2 text-gray-600 dark:text-gray-300 line-clamp-2">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</a>

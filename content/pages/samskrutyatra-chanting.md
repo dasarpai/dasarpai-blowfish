@@ -2,7 +2,7 @@
 draft: false
 id: 705    
 url: /mychanting
-
+layout: infopage
 collection_name: samskrutyatra
 category_name: "Chanting"
 title: "Welcome to my Vedic Chanting Blog"

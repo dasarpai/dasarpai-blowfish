@@ -2,7 +2,7 @@
 draft: false
 id: 747
 title: "Project Index Page"
-layout: "single"
+layout: infopage
 toc_sticky: true
 url: /project-index-page
 date: 2024-10-03

@@ -3,7 +3,7 @@ draft: false
 id: 715    
 title: 'Project Management Glossary'
 date: '2021-02-23T14:47:01+00:00'
-
+layout: infopage
 toc_sticky: true
 url: /pmglossary
 tags: [PM Glossary]

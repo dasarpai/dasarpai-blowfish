@@ -2,7 +2,7 @@
 draft: false
 id: 735    
 title: "Testimonials : What My Customers/Learners Says"
-
+layout: infopage
 toc: false
 toc_sticky: true
 url: /testimonials

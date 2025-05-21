@@ -1,7 +1,7 @@
 ---                
 id: 708    
 title: "Microsoft Project Management Templates"                
-
+layout: infopage
 toc: false                
 toc_sticky: true                
 url: /microsoft-pm-templates                

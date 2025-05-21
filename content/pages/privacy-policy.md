@@ -2,7 +2,7 @@
 draft: false
 id: 745    
 title: "Privacy Policy"
-
+layout: infopage
 toc_sticky: true
 url: /privacy
 date: 2023-12-01

@@ -3,7 +3,7 @@ draft: false
 id: 722    
 title: "Samskrut Yatra Blog"
 date: '2020-10-21T14:51:37+05:30'
-
+layout: infopage
 url: /samskrutyatra-home
 author_profile: true
 header:

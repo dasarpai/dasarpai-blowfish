@@ -1,7 +1,7 @@
 ---
 draft: false
 id: 709    
-
+layout: infopage
 url: /pmbok6-summary
 title: "PMBOK 6 Processes"
 author_profile: true

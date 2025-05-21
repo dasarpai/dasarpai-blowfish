@@ -2,7 +2,7 @@
 draft: false
 id: 741    
 title: "Comment Policy"
-
+layout: infopage
 toc_sticky: true
 url: /comment-policy
 date: 2018-01-28

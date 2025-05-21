@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://localhost:1313"
+baseURL = "https://dasarpai.com/"
 # defaultContentLanguage = "en"
 # disableLanguages = [] #to allow translation work requiring shipping to production
 
@@ -23,7 +23,8 @@ enableEmoji = true
 googleAnalytics = "G-PEDMYR1V0K"
 
 [pagination]
-  pagerSize = 102
+  pagerSize = 50
+  paginatePath = "page"
 
 [imaging]
   anchor = 'Center'

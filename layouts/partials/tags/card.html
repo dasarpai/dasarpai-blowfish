@@ -1,0 +1,63 @@
+{{ define "main" }}
+  {{ .Scratch.Set "scope" "term" }}
+  {{ if .Site.Params.term.showHero | default false }}
+    {{ $heroStyle := print "hero/" .Site.Params.term.heroStyle ".html" }}
+    {{ if templates.Exists (printf "partials/%s" $heroStyle) }}
+      {{ partial $heroStyle . }}
+    {{ else }}
+      {{ partial "hero/basic.html" . }}
+    {{ end }}
+  {{- end -}}
+
+  {{ $toc := and (.Params.showTableOfContents | default (.Site.Params.term.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.term.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      {{ if eq .Data.Plural "tags" }}Tag: {{ end }}{{ .Title }}
+    </h1>
+    <div class="mt-1 mb-8 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      {{ $plural := .Data.Plural }}
+      {{ with .Data.Terms }}
+        {{ $termsCount := len . }}
+        {{ if gt $termsCount 0 }}
+          {{ $termCount := len (index . 0).Pages }}
+          {{ $termCount }} {{ if eq $termCount 1 }}article{{ else }}articles{{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </header>
+
+  <section class="mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range .Pages }}
+        <div class="h-full">
+          {{ partial "tags/card.html" (dict "Page" .) }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ if gt .Paginator.TotalPages 1 }}
+    <div class="mt-12 flex justify-center">
+      <nav class="flex items-center space-x-2">
+        {{ if .Paginator.HasPrev }}
+          <a href="{{ .Paginator.Prev.URL }}" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+            &larr; Previous
+          </a>
+        {{ end }}
+        
+        <span class="px-4 py-2">
+          Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+        </span>
+        
+        {{ if .Paginator.HasNext }}
+          <a href="{{ .Paginator.Next.URL }}" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+            Next &rarr;
+          </a>
+        {{ end }}
+      </nav>
+    </div>
+  {{ end }}
+{{ end }}

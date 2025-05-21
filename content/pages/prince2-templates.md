@@ -1,7 +1,7 @@
 ---                
 id: 720    
 title: "PMI Templates"                
-
+layout: infopage
 url: /prince2-templates                
 date: 2020-09-08                
 tags: [Project Management Templates, PRINCE2 Templates]                

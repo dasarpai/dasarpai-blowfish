@@ -2,7 +2,7 @@
 draft: false
 id: 749
 title: "Summary of My Technology Stacks"
-
+layout: infopage
 toc_sticky: true
 url: /summary-of-my-technology-stacks
 date: 2024-10-03

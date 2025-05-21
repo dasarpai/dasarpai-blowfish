@@ -2,7 +2,7 @@
 draft: false
 id: 702    
 title: "Customer, Team, Participant Diversity"
-
+layout: infopage
 toc: false
 toc_sticky: true
 url: /clients

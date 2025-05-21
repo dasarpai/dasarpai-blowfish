@@ -2,7 +2,7 @@
 draft: false
 id: 751
 title: "Description of Business Domains"
-
+layout: infopage
 toc_sticky: true
 url: /Description-of-Business-Domains
 date: 2024-10-03

@@ -104,7 +104,7 @@ hasChildren = true
   name = "DS Resources"
   identifier = "ds-resources"
   parent = "datascience"
-  url = "/datascience-resources"
+  url = "/categories/dsresources/"
 
   [[main]]
   name = "AI and Business News"
@@ -361,7 +361,7 @@ hasChildren = true
   name = "My Vedic Chantings"
   identifier = "vedic-chantings"
   parent = "samskrut"
-  url = "/mychanting"
+  url = "/categories/chanting/"
 
 
 
@@ -679,12 +679,308 @@ weight = 6
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
-[[footer]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 10
+#####################################
+# footer navigation
+#####################################
 
-[[footer]]
-  name = "Authors"
-  pageRef = "authors"
-  weight = 20
+###### footer navigation ########
+# -----------------------
+# importantlinks
+# -----------------------
+[[footer_importantlinks]]
+name = "About Me"
+url = "/aboutme"
+weight = 1
+
+[[footer_importantlinks]]
+name = "My Data Science Courses/Services"
+url = "/dscourses"
+weight = 2
+
+[[footer_importantlinks]]
+name = "MyWork by Business Domain"
+url = "/summary-of-al-ml-projects"
+weight = 3
+
+[[footer_importantlinks]]
+name = "MyWork by Tech Stack"
+url = "/summary-of-my-technology-stacks"
+weight = 4
+
+[[footer_importantlinks]]
+name = "MyWork in Project Management"
+url = "/summary-of-management-projects"
+weight = 5
+
+[[footer_importantlinks]]
+name = "Clients"
+url = "/clients"
+weight = 6
+
+[[footer_importantlinks]]
+name = "Testimonial"
+url = "/testimonials"
+weight = 7
+
+[[footer_importantlinks]]
+name = "Terms & Condition"
+url = "/terms-of-service"
+weight = 8
+
+[[footer_importantlinks]]
+name = "Privacy Policy"
+url = "/privacy"
+weight = 9
+
+[[footer_importantlinks]]
+name = "Comment Policy"
+url = "/comment-policy"
+weight = 10
+
+# -----------------------
+# myblogs
+# -----------------------
+[[footer_myblogs]]
+name = "Data Science Blog"
+url = "/dsblog"
+weight = 1
+
+[[footer_myblogs]]
+name = "Books/Interviews Blog"
+url = "/booksumary"
+weight = 2
+
+[[footer_myblogs]]
+name = "AI and Business News"
+url = "/news"
+weight = 3
+
+[[footer_myblogs]]
+name = "PMLOGY Blog"
+url = "/pmblog"
+weight = 4
+
+[[footer_myblogs]]
+name = "PMBOK6 Hindi Explorer"
+url = "/pmbok6hi"
+weight = 5
+
+[[footer_myblogs]]
+name = "Wisdom in Awareness Blog"
+url = "/wiaposts"
+weight = 6
+
+[[footer_myblogs]]
+name = "Samskrut Blog"
+url = "/samskrutyatra"
+weight = 7
+
+[[footer_myblogs]]
+name = "My Chantings"
+url = "/mychanting"
+weight = 8
+
+[[footer_myblogs]]
+name = "WIA Quotes"
+url = "/quotations-blog"
+weight = 9
+
+[[footer_myblogs]]
+name = "GK Blog"
+url = "/gk"
+weight = 10
+
+# -----------------------
+# allresources
+# -----------------------
+[[footer_allresources]]
+name = "DS Resources"
+url = "/datascience-tags#ds-resources"
+weight = 1
+
+[[footer_allresources]]
+name = "AI Benchmark Explorer"
+url = "https://aibenchmark-explorer.dasarpai.com"
+weight = 2
+
+[[footer_allresources]]
+name = "Data Science-Books"
+url = "/dsblog/ds-ai-ml-books"
+weight = 3
+
+[[footer_allresources]]
+name = "Data Science/AI Cheatsheets"
+url = "/dsblog/data-science-cheatsheets"
+weight = 4
+
+[[footer_allresources]]
+name = "Video Channels to Learn DS/AI"
+url = "/dsblog/best-youtube-channels-for-ds"
+weight = 5
+
+[[footer_allresources]]
+name = "DS/AI Interview Questions"
+url = "/dsblog/ds-ai-ml-interview-resources"
+weight = 6
+
+[[footer_allresources]]
+name = "GitHub DAI-Datasets"
+url = "https://github.com/dasarpai/DAI-Datasets"
+weight = 7
+
+[[footer_allresources]]
+name = "PMBOK6 Templates"
+url = "/pmi-templates"
+weight = 8
+
+[[footer_allresources]]
+name = "PRINCE2 Templates"
+url = "/prince2-templates"
+weight = 9
+
+[[footer_allresources]]
+name = "Microsoft PM Templates"
+url = "/microsoft-pm-templates"
+weight = 10
+
+# -----------------------
+# projectmanagement
+# -----------------------
+[[footer_projectmanagement]]
+name = "PMLOGY Home"
+url = "/pmlogy-home"
+weight = 1
+
+[[footer_projectmanagement]]
+name = "PMLOGY Blog"
+url = "/pmblog"
+weight = 2
+
+[[footer_projectmanagement]]
+name = "PM Glossary"
+url = "/pmglossary"
+weight = 3
+
+[[footer_projectmanagement]]
+name = "PM Topics"
+url = "/pmlogy-tags"
+weight = 4
+
+[[footer_projectmanagement]]
+name = "PMBOK6 Topics"
+url = "/pmbok6-tags"
+weight = 5
+
+[[footer_projectmanagement]]
+name = "PMBOK6"
+url = "/pmbok6-summary"
+weight = 6
+
+[[footer_projectmanagement]]
+name = "PMBOK6 Explorer"
+url = "/pmbok6"
+weight = 7
+
+[[footer_projectmanagement]]
+name = "PMBOK6 Hindi Topics"
+url = "/pmbok6hi-tags"
+weight = 8
+
+[[footer_projectmanagement]]
+name = "PMBoK6 Hindi"
+url = "/pmbok6hi-summary"
+weight = 9
+
+[[footer_projectmanagement]]
+name = "PMBOK6 Hindi Explorer"
+url = "/pmbok6hi"
+weight = 10
+
+# -----------------------
+# wia
+# -----------------------
+[[footer_wia]]
+name = "WIA Home"
+url = "/wia-home"
+weight = 1
+
+[[footer_wia]]
+name = "WIA Blog"
+url = "/wiaposts"
+weight = 2
+
+[[footer_wia]]
+name = "WIA Topics"
+url = "/wia-tags"
+weight = 3
+
+[[footer_wia]]
+name = "WIA Quotes"
+url = "/quotations-blog"
+weight = 4
+
+[[footer_wia]]
+name = "GK Blog"
+url = "/gk"
+weight = 5
+
+[[footer_wia]]
+name = "GK Topic"
+url = "/gk-tags"
+weight = 6
+
+# -----------------------
+# samskrutyatra
+# -----------------------
+[[footer_samskrutyatra]]
+name = "SamskrutYatra Home"
+url = "/samskrutyatra-home"
+weight = 1
+
+[[footer_samskrutyatra]]
+name = "Samskrut Blog"
+url = "/samskrutyatra"
+weight = 2
+
+[[footer_samskrutyatra]]
+name = "Samskrut Topics"
+url = "/samskrutyatra-tags"
+weight = 3
+
+[[footer_samskrutyatra]]
+name = "My Vedic Chantings"
+url = "/mychanting"
+weight = 4
+
+# -----------------------
+# mygallary
+# -----------------------
+[[footer_mygallary]]
+name = "Online AI Classes 1"
+url = "/gallary/slider-online-sessions1"
+weight = 1
+
+[[footer_mygallary]]
+name = "Online AI Classes 2"
+url = "/gallary/slider-online-sessions2"
+weight = 2
+
+[[footer_mygallary]]
+name = "Online AI Classes 3"
+url = "/gallary/slider-online-sessions3"
+weight = 3
+
+[[footer_mygallary]]
+name = "Online AI Classes 4"
+url = "/gallary/slider-online-sessions4"
+weight = 4
+
+[[footer_mygallary]]
+name = "Management Classes"
+url = "/gallary/slider-pm-selected-photos"
+weight = 5
+
+[[footer_mygallary]]
+name = "PM & DS Workshop"
+url = "/gallary/slider-pm-workshops"
+weight = 6

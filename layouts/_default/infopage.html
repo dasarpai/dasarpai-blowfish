@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ .Scratch.Set "scope" "single" }}
+
+<style>
+  .article-content img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    object-fit: contain;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 768px) {
+    .article-content img {
+      width: 100%;
+      margin-left: 0;
+      transform: none;
+    }
+  }
+</style>
+
+<article>
+  {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}
+    {{ $heroStyle := .Params.heroStyle | default .Site.Params.article.heroStyle }}
+    {{ $heroPartial := printf "hero/%s.html" $heroStyle }}
+    {{ if templates.Exists (printf "partials/%s" $heroPartial) }}
+      {{ partial $heroPartial . }}
+    {{ else }}
+      {{ partial "hero/basic.html" . }}
+    {{ end }}
+  {{ end }}
+
+  
+
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      <div class="article-content mb-20">
+        {{ .Content }}
+      </div>
+  </section>
+</article>
+{{ end }}

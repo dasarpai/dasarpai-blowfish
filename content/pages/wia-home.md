@@ -3,7 +3,7 @@ draft: false
 id: 738    
 title: Wisdom in Awareness - My Journey
 date: '2020-10-21T14:51:37+05:30'
-
+layout: infopage
 url: /wia-home
 author_profile: true
 header:
